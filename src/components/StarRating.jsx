@@ -2,17 +2,24 @@ import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 import { faStar as filledStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const StarRating = () => {
+export const StarRating = ({ rating }) => {
+  const containerLength = 5;
+  let filled;
 
-    const containerLength = 5;
+  console.log(rating);
   return (
     <div>
-      <div className="w-20 grid grid-cols-6 gap-0">
+      <div className="grid grid-cols-5 gap-1">
         {Array.from({ length: containerLength }, (_, index) => (
-          <Icons key={index} icon={type} filled={index < filled} />
+          <div>
+            {index < rating ? (
+              <FontAwesomeIcon icon={filledStar} />
+            ) : (
+              <FontAwesomeIcon icon={emptyStar} />
+            )}
+          </div>
         ))}
       </div>
-      <img className="w-2" src={filled ? filledStar : emptyStar} />
     </div>
   );
 };

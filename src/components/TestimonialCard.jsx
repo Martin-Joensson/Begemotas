@@ -1,5 +1,6 @@
 import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { StarRating } from "./StarRating";
 
 export const TestimonialCard = ({ text, rating, face }) => {
   // image, quote and rating
@@ -19,7 +20,7 @@ export const TestimonialCard = ({ text, rating, face }) => {
     selectedPortrait = portrait3;
   }
 
-  
+
   return (
     <div className="flex flex-col items-center text-center border rounded-xl p-2">
       <img
@@ -27,12 +28,8 @@ export const TestimonialCard = ({ text, rating, face }) => {
         src={selectedPortrait}
       />
       <p>{text}</p>
-      <div className="flex">
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} /> <FontAwesomeIcon icon={faStarHalf} />
-      </div>
+      <StarRating rating={rating} />
+  
     </div>
   );
 };
