@@ -3,6 +3,7 @@ import { NotFound } from "../components/NotFound";
 import { Body } from "../components/Main/Body";
 import { Blasting } from "../components/Sprängarbeten/Blasting";
 import { Transport } from "../components/Sjötransport/Transport";
+import { About } from "../components/About/About";
 
 export const ContentRoutes = () => {
   return (
@@ -11,7 +12,7 @@ export const ContentRoutes = () => {
       <Route path="/sprangarbeten" element={<Blasting />} />
       <Route path="/sjotransport" element={<Transport />} />
       <Route path="/batvarv" element={<NotFound />} />
-      <Route path="/om" element={<NotFound />} />
+      <Route path="/om" element={<About />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );

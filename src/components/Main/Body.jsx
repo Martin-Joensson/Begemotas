@@ -1,7 +1,7 @@
 import React from "react";
 import { Hero } from "./Hero";
 import { Testimonial } from "./Testimonial";
-import { Location } from "./Location";
+import { Location } from "../Location";
 import { ImageContainer } from "../ImageContainer";
 
 export const Body = () => {

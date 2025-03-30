@@ -24,21 +24,19 @@ export const Header = () => {
     }
   };
 
-  const handleClick = () => {};
-
   return (
     <nav className="bg-begemotas-blue text-white w-screen">
-      <div className="flex tablet:flex-col justify-between  items-center">
+      <div className="flex tablet:flex-col justify-between items-center">
         <NavLink to="/">
-          <div className="flex content-center mx-4 p-2">
+          <div className="flex  mx-4 p-2">
             <img
               src={headerLogo}
               alt="Peter & Rusty AB"
-              className="w-20 min-w-20 object-contain"
+              className="w-20 min-w-10 object-contain"
             />
 
-            <h1 className="text-xl font-black p-2 w-full  desktop:text-center">
-              Peter & Rusty
+            <h1 className="text-xl font-black px-2 w-full desktop:text-center">
+              Peter & Rusty AB
             </h1>
           </div>
         </NavLink>
