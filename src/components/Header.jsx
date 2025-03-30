@@ -87,7 +87,7 @@ export const Header = () => {
       <div
         id="mobilemenu"
         ref={mobileMenuRef}
-        className="flex bg-slate-800 flex-col py-4 gap-4 items-center tablet:flex-row justify-evenly font-headerFont hidden tablet:hidden"
+        className="flex bg-slate-800 w-screen flex-col py-4 gap-4 items-center tablet:flex-row justify-evenly font-headerFont hidden tablet:hidden"
       >
         <NavLink to="/sprangarbeten">
           <p>Sprängarbeten</p>
