@@ -62,8 +62,8 @@ export const Header = () => {
             />
           </svg>
         </div>
-        <div className="hidden tablet:flex  justify-evenly">
-          <div className=" hidden tablet:flex w-full justify-between font-headerFont items-center">
+        <div className="hidden tablet:flex w-full">
+          <div className=" hidden tablet:flex w-full font-headerFont justify-evenly">
             <NavLink
               to="/sprangarbeten"
               className="hover:bg-[rgba(255,255,255,0.2)]"
@@ -76,9 +76,9 @@ export const Header = () => {
             >
               <p className="p-4">Sjötransport</p>
             </NavLink>
-            <NavLink to="/batvarv" className="hover:bg-[rgba(255,255,255,0.2)]">
+            {/* <NavLink to="/batvarv" className="hover:bg-[rgba(255,255,255,0.2)]">
               <p className="p-4 ">Båtvarv</p>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/om" className="hover:bg-[rgba(255,255,255,0.2)]">
               <p className="p-4">Om oss</p>
             </NavLink>
@@ -97,9 +97,9 @@ export const Header = () => {
         <NavLink to="/sjotransport">
           <p>Sjötransport</p>
         </NavLink>
-        <NavLink to="/batvarv">
+        {/* <NavLink to="/batvarv">
           <p>Båtvarv</p>
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/om" className="pt-6">
           <p>Om oss</p>
         </NavLink>
