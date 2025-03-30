@@ -17,7 +17,7 @@ export const Hero = () => {
           <p className="text-3xl font-bungee font-extrabold">
             <a href="tel:+46739674844">073-967 48 44</a>
           </p>
-          <button className="w-fit"> Contact</button>
+          {/* <button className="w-fit"> Contact</button> */}
         </div>
 
         <img
