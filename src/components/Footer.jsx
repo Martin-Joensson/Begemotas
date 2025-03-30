@@ -3,16 +3,15 @@ import { faHouse, faSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Footer = () => {
+
+  // Adress, Orgnr, Telefon nummer, Certifikat Mail.
   return (
-    <div className="bg-gray-800 font-poppins z-50">
+    <div className="bg-begemotas-blue font-poppins z-50">
       <p className="text-right p-4 text-[rgba(255,255,255,0.87)]">
-        <a
-          href="https://github.com/Martin-Joensson/"
-          className="mx-2"
-        >
+        <a href="https://github.com/Martin-Joensson/" className="mx-2">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        &copy; 2025 <a href="https://raglancreation.com">Martin Jönsson </a> 
+        &copy; 2025 <a href="https://raglancreation.com">Martin Jönsson </a>
       </p>
     </div>
   );

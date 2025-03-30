@@ -1,16 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import { NotFound } from "../components/NotFound";
 import { Body } from "../components/Body";
-import { Resume } from "../components/Resume";
-import { Projects } from "../components/Projects";
-
 
 export const ContentRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Body />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/sprangarbeten" element={<NotFound />} />
+      <Route path="/sjotransport" element={<NotFound />} />
+      <Route path="/batvarv" element={<NotFound />} />
+      <Route path="/om" element={<NotFound />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );

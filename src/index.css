@@ -2,11 +2,19 @@
 
 @theme {
   --font-poppins: Poppins, sans-serif;
+  --font-jost: Jost, sans-serif;
+  --font-bungee: Bungee, sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-tablet: 40rem;
   --breakpoint-laptop: 64rem;
-  --breakpoint-desktop: 80rem;
+  --breakpoint-desktop: 70rem;
+
+  --color-begemotas-blue: #1b3169;
+  --color-begemotas-green: #254d32;
+  --color-begemotas-orange: #ff8200;
+  --color-begemotas-logo-orange: #f3a220;
+  --color-begemotas-logo-blue: #1b3169;
 }
 
 :root {
@@ -27,11 +35,11 @@
 
 a {
   font-weight: 500;
-  color: #663399;
+  color: #f3a220;
   text-decoration: inherit;
 }
 a:hover {
-  color: #552288;
+  color: #f9a92f;
 }
 
 #burgerLinks {
@@ -46,13 +54,19 @@ body {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-family: Bungee;
+  //font-size: 2.2em;
   line-height: 1.1;
 }
 
 h2 {
+  font-family: Bungee;
   font-size: 1.8em;
   line-height: 1.1;
+}
+
+nav {
+  font-family: Bungee;
 }
 
 button {
@@ -67,7 +81,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #f3a220;
 }
 button:focus,
 button:focus-visible {
@@ -75,8 +89,8 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
+  /* :root {
+    color: #1b3169;
     background-color: #ffffff;
   }
   a:hover {
@@ -84,7 +98,7 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
-  }
+  } */
 }
 
 .card {
