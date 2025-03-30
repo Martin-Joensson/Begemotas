@@ -9,7 +9,7 @@ export const Story = () => {
       style={{ backgroundImage: `url(${bgImg})` }}
       className="bg-center bg-cover"
     >
-      <div className="relative bg-[rgba(0,0,0,0.7)] w-full flex justify-center">
+      <div className="relative bg-[rgba(0,0,0,0.7)] w-screen flex justify-center">
         <div className="flex flex-col gap-2 w-full  z-20 border tablet:w-1/2 text-center items-center rounded-lg m-10 p-10">
           <h2>Ett litet familjeföretag</h2>
           <p className="">Vi är en far och son duo som har gjort det mest.</p>

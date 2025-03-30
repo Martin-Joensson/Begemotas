@@ -10,7 +10,7 @@ export const CallUs = () => {
       style={{ backgroundImage: `url(${bgImg})` }}
       className="bg-center bg-cover"
     >
-      <div className="relative bg-[rgba(0,0,0,0.7)] w-full flex justify-center">
+      <div className="relative bg-[rgba(0,0,0,0.7)] w-screen flex justify-center">
         <div className="flex flex-col gap-2 w-full  z-20 border tablet:w-1/2 text-center items-center rounded-lg m-10 p-10">
           <h2>Ring oss</h2>
           <p className="text-3xl font-bungee font-extrabold">
